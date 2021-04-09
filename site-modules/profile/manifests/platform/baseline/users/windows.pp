@@ -1,3 +1,8 @@
 class profile::platform::baseline::users::windows {
-  # TODO: Create user
+  user { 'Art Vandelay':
+    ensure   => present,
+    password => 'Ha!!ochenTest0',
+    groups   => ['Vandelay Industries Administrators'],
+    managehome => true,
+  }
 }
