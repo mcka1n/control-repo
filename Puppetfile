@@ -10,6 +10,7 @@ mod 'puppetlabs-registry', '4.0.0'
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
 mod 'puppetlabs-acl', '4.0.0'
+mod 'puppet-archive', '4.6.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
