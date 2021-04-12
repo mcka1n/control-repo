@@ -9,6 +9,7 @@ mod 'puppetlabs-ntp', '8.4.0'
 mod 'puppetlabs-registry', '3.1.0'
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
+mod 'puppetlabs-acl', '4.0.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
