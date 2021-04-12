@@ -12,4 +12,18 @@ class profile::platform::baseline::settings::windows {
     data  => '0',
     type  => 'dword',
   }
+
+  registry::value { 'Enable Shutdown Event Tracker':
+    key   => 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\CurrentVersion\Reliability',
+    value => 'ShutdownReasonOn',
+    data  => '1',
+    type  => 'dword',
+  }
+
+  registry::value { 'Enable Shutdown Event Tracker UI':
+    key   => 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\CurrentVersion\Reliability',
+    value => 'ShutdownReasonUI',
+    data  => '1',
+    type  => 'dword',
+  }
 }
