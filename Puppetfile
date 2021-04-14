@@ -2,9 +2,18 @@ forge 'https://forge.puppet.com'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
-#mod 'puppetlabs/inifile', '3.0.0'
-#mod 'puppetlabs/stdlib',  '6.0.0'
-#mod 'puppetlabs/concat',  '6.0.0'
+mod 'puppetlabs/inifile', '3.0.0'
+mod 'puppetlabs/stdlib',  '6.0.0'
+mod 'puppetlabs/concat',  '6.0.0'
+mod 'puppetlabs-ntp', '8.4.0'
+mod 'puppetlabs-registry', '4.0.0'
+mod 'tse-time', '1.0.1'
+mod 'tse-winntp', '1.0.1'
+mod 'puppetlabs-acl', '4.0.0'
+mod 'puppet-archive', '4.6.0'
+mod 'puppetlabs-pwshlib', '0.8.0'
+mod 'puppetlabs-powershell', '5.0.0'
+mod 'puppetlabs-chocolatey', '6.0.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
