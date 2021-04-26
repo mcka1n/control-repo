@@ -29,19 +29,18 @@ class profile::platform::windows::webserver::iis_server {
 
   # ###################################
   # Adds basic website
-  archive { 'C:/inetpub/minimal/file-to-use/index.html':
+  archive { 'C:/inetpub/minimal/af0e24303d241b888152bd1cd7c9063d':
     source       => 'https://gist.github.com/dylanratcliffe/af0e24303d241b888152bd1cd7c9063d/archive/ad273bebc01c6dac176da7a5f3c38c4d9a584521.zip',
     extract      => true,
     extract_path => 'C:/inetpub/minimal',
-    creates      => 'C:/inetpub/minimal/file-to-use',
     cleanup      => true,
   }
 
   exec { 'MoveIndex':
-    command     => "mv file-to-use/index.html index.html",
+    command     => "Copy-Item C:/inetpub/minimal/af0e24303d241b888152bd1cd7c9063d-ad273bebc01c6dac176da7a5f3c38c4d9a584521/index.html C:/inetpub/minimal/index.html",
     provider    => powershell,
     refreshonly => true,
-    require     => Archive['C:/inetpub/minimal/file-to-use/index.html']
+    require     => Archive['C:/inetpub/minimal/af0e24303d241b888152bd1cd7c9063d']
   }
   # ###################################
 }
