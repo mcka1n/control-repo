@@ -34,12 +34,13 @@ class profile::platform::windows::webserver::iis_server {
     extract      => true,
     extract_path => 'C:/inetpub/minimal',
     cleanup      => true,
+    notify  => Exec['MoveIndex'],
   }
 
   exec { 'MoveIndex':
     command     => "Copy-Item C:/inetpub/minimal/af0e24303d241b888152bd1cd7c9063d-ad273bebc01c6dac176da7a5f3c38c4d9a584521/index.html C:/inetpub/minimal/index.html",
     provider    => powershell,
-    refreshonly => false,
+    refreshonly => true,
     require     => Archive['C:/inetpub/minimal/af0e24303d241b888152bd1cd7c9063d']
   }
   # ###################################
