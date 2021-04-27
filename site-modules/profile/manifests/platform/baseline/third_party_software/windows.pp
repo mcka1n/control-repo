@@ -16,7 +16,7 @@ class profile::platform::baseline::third_party_software::windows {
   }
 
   package { '7zip':
-    ensure   => latest,
+    ensure   => 'latest',
     provider => 'chocolatey',
     notify => Reboot['after_run'],
   }
