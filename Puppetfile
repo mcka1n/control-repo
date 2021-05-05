@@ -17,6 +17,14 @@ mod 'puppetlabs-chocolatey', '6.0.0'
 mod 'puppetlabs-iis', '8.0.0'
 mod 'puppetlabs-reboot', '4.0.2'
 
+# CD4PE
+mod 'puppetlabs-cd4pe', '3.2.1'
+mod 'puppetlabs-puppet_authorization', '0.5.1'
+mod 'puppetlabs-hocon', '1.1.0'
+mod 'puppetlabs-docker', '4.0.0'
+mod 'puppetlabs-apt', '8.0.2'
+mod 'puppetlabs-translate', '2.2.0'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
