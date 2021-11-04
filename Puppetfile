@@ -18,7 +18,7 @@ mod 'puppetlabs-iis', '8.0.0'
 mod 'puppetlabs-reboot', '4.0.2'
 
 # For running a plan via task to avoid hitting orchestrator
-mod 'reidmv-taskplan', '0.2.0'
+mod 'reidmv-taskplan', '0.2.2'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
