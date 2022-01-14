@@ -24,6 +24,10 @@ mod 'reidmv-taskplan',
  git:    'https://github.com/mcka1n/reidmv-taskplan',
  branch: 'patch-1'
 
+ mod 'puppet_data_service',
+ git:    'https://github.com/puppetlabs/puppetlabs-puppet_data_service',
+ branch: 'main'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
