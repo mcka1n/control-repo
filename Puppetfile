@@ -18,11 +18,7 @@ mod 'puppetlabs-iis', '8.0.0'
 mod 'puppetlabs-reboot', '4.0.2'
 
 # For running a plan via task to avoid hitting orchestrator
-# mod 'reidmv-taskplan', '0.2.2'
-
-mod 'reidmv-taskplan',
- git:    'https://github.com/mcka1n/reidmv-taskplan',
- branch: 'patch-1'
+mod 'reidmv-taskplan', '0.2.3'
 
  mod 'puppet_data_service',
  git:    'https://github.com/puppetlabs/puppetlabs-puppet_data_service',
