@@ -20,9 +20,9 @@ mod 'puppetlabs-reboot', '4.0.2'
 # For running a plan via task to avoid hitting orchestrator
 mod 'reidmv-taskplan', '0.2.3'
 
- mod 'puppet_data_service',
- git:    'https://github.com/puppetlabs/puppetlabs-puppet_data_service',
- branch: 'main'
+mod 'puppet_data_service',
+git:    'https://github.com/puppetlabs/puppetlabs-puppet_data_service',
+branch: 'main'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
