@@ -10,3 +10,11 @@ hierarchy:
     paths:
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
+  - name: "Puppet Data Service"
+    data_hash: puppet_data_service::data_hash
+    uris:
+      - "nodes/%{trusted.certname}"
+      - "os/%{operatingsystem}"
+      - "common"
+    options:
+      on_config_absent: "continue"
