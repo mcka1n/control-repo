@@ -16,6 +16,7 @@ mod 'puppetlabs-powershell', '5.0.0'
 mod 'puppetlabs-chocolatey', '6.0.0'
 mod 'puppetlabs-iis', '8.0.0'
 mod 'puppetlabs-reboot', '4.0.2'
+mod 'puppetlabs-motd', '6.1.0'
 
 # For running a plan via task to avoid hitting orchestrator
 mod 'reidmv-taskplan', '0.2.3'
