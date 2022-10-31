@@ -25,6 +25,10 @@ mod 'puppet_data_service',
 git:    'https://github.com/puppetlabs/puppetlabs-puppet_data_service',
 branch: 'main'
 
+mod 'puppet_bolt_server',
+git:    'https://github.com/mcka1n/puppetlabs-puppet_bolt_server',
+branch: 'development'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
