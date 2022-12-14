@@ -21,6 +21,9 @@ mod 'puppetlabs-motd', '6.1.0'
 # For running a plan via task to avoid hitting orchestrator
 mod 'reidmv-taskplan', '0.2.3'
 
+# For running Bolt plans from the bolt-server
+mod 'puppetlabs-apply_helpers', '0.3.0'
+
 mod 'puppet_data_service',
 git:    'https://github.com/puppetlabs/puppetlabs-puppet_data_service',
 branch: 'main'
