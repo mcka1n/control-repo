@@ -19,7 +19,7 @@ mod 'puppetlabs-reboot', '4.0.2'
 mod 'puppetlabs-motd', '6.1.0'
 
 # For running a plan via task to avoid hitting orchestrator
-mod 'reidmv-taskplan', '0.2.3'
+# mod 'reidmv-taskplan', '0.2.3'
 
 # For running Bolt plans from the bolt-server
 mod 'puppetlabs-apply_helpers', '0.3.0'
