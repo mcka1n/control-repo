@@ -3,6 +3,9 @@ plan solarch::apply (
 ) {
   out::message('This plan will run an apply block')
 
+  # Install the puppet-agent package and gather facts
+  $targets.apply_prep
+
   # Apply Puppet code
   $apply_results = apply($targets) {
     file { '/root/solarch_test': 
